@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 800px;
+}
+
+/* Style the header */
+header {
+  background-image: url("images/lava.png");
+  padding: 15px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  width: 100%
+}
+
+h2, h3 {
+	margin: 3px;
+	padding: 0px;
+}
+header.p2 {
+  background-color: rgb(3, 164, 54);
+}
+
+header.p3 {
+  background-color: rgb(183, 2, 2);
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 300px;
+  background: #ccc;
+  padding: 20px;
+}
+
+a:link, a:visited {
+  background-color: #9b2226;
+  color: white;
+  border: 2px solid #bb3e03;
+  border-radius: 2px;
+  display: block;
+  width=100px;
+  padding: 10px 10px;
+  margin-top: 10px;
+  text-align: left;
+  text-decoration: none;
+  box-shadow: 3px 2px 0px 0px #ee9b00;         /* top external shadow */
+}
+
+a:hover, a:active {
+  background-color: white;
+  color: #bb3e03;
+}
+
+article {
+  float: left;
+  width: 80%;
+  padding: 20px;
+  height: 300px;
+  background-color: #f1f1f1;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #ca6702;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
