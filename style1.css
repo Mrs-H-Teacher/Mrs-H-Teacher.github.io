@@ -9,7 +9,7 @@ body {
 
 /* Style the header */
 header {
-  background-image: url("/lava.png");
+  background-image: url("lava.png");
   padding: 15px;
   text-align: center;
   font-size: 35px;
